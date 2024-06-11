@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2</title>
+</head>
+<body>
+    <h1>1-	¿Cuáles son las principales funciones de un kernel en la arquitectura de un sistema operativo y cómo interactúa con el hardware?</h1>
+    <p>El kernel es el componente central de un sistema operativo. Sus funciones principales incluyen:
+
+        Gestión de Procesos
+        Creación y Terminación: Maneja la creación y terminación de procesos.
+        Planificación de Procesos: Asigna tiempo de CPU a los procesos en función de un algoritmo de planificación.
+        Conmutación de Contexto: Guarda y restaura el estado de la CPU al cambiar de un proceso a otro.
+        Gestión de Memoria
+        Asignación de Memoria: Distribuye y gestiona la memoria física y virtual para los procesos.
+        Paginación y Segmentación: Implementa técnicas para proporcionar a los procesos acceso a más memoria de la disponible físicamente, y para proteger el espacio de memoria de cada proceso.
+        Gestión de Dispositivos
+        Controladores de Dispositivos: Proporciona interfaces para interactuar con dispositivos de hardware.
+        Comunicación de Dispositivos: Facilita la comunicación entre el hardware y los procesos del usuario.
+        Sistema de Archivos
+        Acceso a Archivos: Gestiona la lectura, escritura, creación y eliminación de archivos y directorios.
+        Organización de Datos: Proporciona una estructura para almacenar y recuperar datos de manera eficiente.
+        Seguridad y Protección
+        Control de Acceso: Define políticas de acceso y permisos para proteger los recursos del sistema.
+        Aislamiento de Procesos: Asegura que los procesos no interfieran entre sí y protege el núcleo del sistema de accesos no autorizados.
+        Interacción con el Hardware:
+        
+        Llamadas al Sistema (Syscalls): Las aplicaciones utilizan llamadas al sistema para solicitar servicios del kernel.
+        Interrupciones: El hardware puede enviar interrupciones al kernel para notificar eventos como la finalización de operaciones de E/S.
+        Controladores de Dispositivos: El kernel interactúa con el hardware a través de controladores específicos, que traducen comandos de software a instrucciones de hardware.</p>
+
+<h2>2-	¿cómo se gestionan los procesos y cuál es la importancia de la multitarea en la eficiencia del sistema?</h2>
+<p>Gestión de Procesos
+    Estados de los Procesos: Los procesos pueden estar en estados como ejecución, listo o bloqueado. El kernel gestiona las transiciones entre estos estados.
+    Planificación de Procesos: Los algoritmos de planificación deciden el orden y el tiempo de ejecución de los procesos. Ejemplos de algoritmos incluyen Round Robin, Prioridad, y First-Come-First-Serve.
+    Conmutación de Contexto: El kernel guarda el estado del proceso actual (contexto) y carga el estado del siguiente proceso a ejecutar. Este proceso es fundamental para la multitarea.
+    Importancia de la Multitarea
+    Eficiencia de CPU: Permite la ejecución concurrente de múltiples procesos, maximizando el uso de la CPU. Mientras un proceso espera, otro puede utilizar la CPU.
+    Responsividad: Mejora la capacidad de respuesta de los sistemas interactivos, permitiendo a las aplicaciones responder rápidamente a las entradas del usuario.
+    Rendimiento: Aumenta el rendimiento general del sistema al permitir que múltiples aplicaciones y servicios se ejecuten simultáneamente.</p>
+
+    <h3>3-	¿Qué medidas de seguridad se pueden implementar a nivel de sistema operativo para proteger una red, especialmente en entornos empresariales?</h3>
+    <p>Control de Acceso
+        Autenticación Fuerte: Implementación de contraseñas seguras, autenticación multifactor (MFA), y biometría.
+        Autorización y Permisos: Uso de políticas basadas en roles (RBAC) para limitar el acceso a recursos según las necesidades del usuario.
+        Seguridad de Red
+        Firewalls: Configuración de firewalls para filtrar el tráfico de red basado en reglas de seguridad.
+        VPNs: Utilización de redes privadas virtuales para asegurar las conexiones remotas.
+        Segmentación de Red: División de la red en segmentos más pequeños para limitar el acceso a recursos sensibles y contener posibles brechas de seguridad.
+        Actualización y Parches
+        Parches de Seguridad: Aplicación regular de parches y actualizaciones para corregir vulnerabilidades conocidas.
+        Actualizaciones Automáticas: Configuración de actualizaciones automáticas para asegurar que los sistemas estén siempre protegidos.
+        Monitorización y Auditoría
+        Registro de Eventos: Mantener registros detallados de eventos del sistema y accesos para detectar actividades sospechosas.
+        Sistemas de Detección de Intrusiones (IDS): Implementación de IDS para monitorizar el tráfico de red y detectar posibles intrusiones.
+        Protección contra Malware
+        Antivirus y Antimalware: Uso de software antivirus y antimalware actualizado para proteger contra amenazas conocidas.
+        Escaneos Regulares: Realización de escaneos regulares para detectar y eliminar malware.
+        Cifrado
+        Cifrado de Datos: Implementación de cifrado para proteger datos en reposo y en tránsito.
+        Cifrado de Disco Completo: Uso de cifrado de disco completo para proteger la información almacenada en dispositivos físicos.
+        Educación y Formación
+        Concienciación en Seguridad: Programas de formación para empleados sobre buenas prácticas de seguridad y cómo identificar amenazas comunes.
+        Políticas de Seguridad: Establecimiento y comunicación de políticas de seguridad claras a todos los empleados.</p>
+</body>
+</html>
